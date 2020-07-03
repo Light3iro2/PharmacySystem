@@ -33,7 +33,7 @@ namespace Pharmacy_system
                 EmptyField();
                 ShowPharmacies();
             }
-            catch { MessageBox.Show("Неудалось добавить информацию об аптеке", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            catch { }
         }
 
         private void listViewShowPharmacies_SelectedIndexChanged(object sender, EventArgs e)
