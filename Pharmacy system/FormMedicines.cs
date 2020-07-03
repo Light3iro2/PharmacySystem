@@ -17,6 +17,7 @@ namespace Pharmacy_system
             InitializeComponent();
             ShowMedicines();
             EmptyField();
+            comboBoxForm.KeyPress += (sender, e) => e.Handled = true;
         }
         private void EmptyField()
         {

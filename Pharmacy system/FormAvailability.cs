@@ -18,6 +18,8 @@ namespace Pharmacy_system
             ShowMedicines();
             ShowPharmacies();
             ShowAvailability();
+            comboBoxShowMedicines.KeyPress += (sender, e) => e.Handled = true;
+            comboBoxShowPharmacies.KeyPress += (sender, e) => e.Handled = true;
         }
         private void ShowMedicines()
         {
