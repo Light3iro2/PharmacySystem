@@ -215,6 +215,7 @@
             this.textBoxQuantity.Name = "textBoxQuantity";
             this.textBoxQuantity.Size = new System.Drawing.Size(219, 24);
             this.textBoxQuantity.TabIndex = 33;
+            this.textBoxQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxQuantity_KeyPress);
             // 
             // comboBoxShowMedicines
             // 

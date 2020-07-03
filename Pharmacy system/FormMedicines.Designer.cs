@@ -49,8 +49,8 @@
             this.labelDateRelease = new System.Windows.Forms.Label();
             this.textBoxDateRelease = new System.Windows.Forms.TextBox();
             this.labelLogoName = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonDelete
@@ -266,15 +266,15 @@
             this.labelLogoName.TabIndex = 33;
             this.labelLogoName.Text = "Сеть аптек 24/7";
             // 
-            // pictureBox1
+            // pictureBoxLogo
             // 
-            this.pictureBox1.Image = global::Pharmacy_system.Properties.Resources._5dab0406572aa;
-            this.pictureBox1.Location = new System.Drawing.Point(314, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(88, 72);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 32;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxLogo.Image = global::Pharmacy_system.Properties.Resources._5dab0406572aa;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(314, 6);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(88, 72);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 32;
+            this.pictureBoxLogo.TabStop = false;
             // 
             // FormMedicines
             // 
@@ -283,7 +283,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(213)))), ((int)(((byte)(202)))));
             this.ClientSize = new System.Drawing.Size(712, 410);
             this.Controls.Add(this.labelLogoName);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxLogo);
             this.Controls.Add(this.labelDateRelease);
             this.Controls.Add(this.textBoxDateRelease);
             this.Controls.Add(this.comboBoxForm);
@@ -301,7 +301,7 @@
             this.Name = "FormMedicines";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Информация о лекарствах";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,6 +330,6 @@
         private System.Windows.Forms.Label labelDateRelease;
         private System.Windows.Forms.TextBox textBoxDateRelease;
         private System.Windows.Forms.Label labelLogoName;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
     }
 }

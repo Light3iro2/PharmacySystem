@@ -80,6 +80,10 @@ namespace Pharmacy_system
                 ClearField();
                 ShowAvailability();
             }
+            else
+            {
+                MessageBox.Show("Выберите товар, для изменения информации о нём");
+            }
         }
 
         private void listViewShowAvailability_SelectedIndexChanged(object sender, EventArgs e)
@@ -145,6 +149,15 @@ namespace Pharmacy_system
         }
 
         private void textBoxPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char number = e.KeyChar;
+            if (!Char.IsDigit(number) && number != 8 && number != 44) // цифры, клавиша BackSpace и запятая
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBoxQuantity_KeyPress(object sender, KeyPressEventArgs e)
         {
             char number = e.KeyChar;
             if (!Char.IsDigit(number) && number != 8 && number != 44) // цифры, клавиша BackSpace и запятая

@@ -55,10 +55,10 @@ namespace Pharmacy_system
             }
             else
             {
-                labelListAvailability.Visible = true;
-                comboBoxListAvailability.Visible = true;
-                labelQuantity.Visible = true;
-                textBoxQuantity.Visible = true;
+                labelListAvailability.Visible = false;
+                comboBoxListAvailability.Visible = false;
+                labelQuantity.Visible = false;
+                textBoxQuantity.Visible = false;
                 EmptyField();
             }
         }
@@ -130,7 +130,7 @@ namespace Pharmacy_system
             comboBoxListAvailability.Items.Clear();
             foreach (Availability a in Program.pharmaciesDb.Availability)
             {
-                if (a.Id_Medicines == idaptek)
+                if (a.Id_Pharmacies == idaptek)
                 {
                     string[] item = { a.Medicines.FormRelease + ", " + a.Medicines.Name + ". Производитель: " + a.Medicines.Maker };
                     comboBoxListAvailability.Items.Add(string.Join(" ", item));
